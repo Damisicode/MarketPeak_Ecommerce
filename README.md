@@ -1,4 +1,4 @@
-# MarketPeak_Ecommerce
+# MarketPeak Ecommerce Website
 Ecommerce Platform Deployment with Git, Linux, and AWS
 
 ## Steps to deploying the Ecommerce Platform to an AWS Amazon Linux instance in 13 simple steps
