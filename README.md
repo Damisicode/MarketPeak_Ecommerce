@@ -75,10 +75,10 @@ sudo systemctl reload httpd
 #### Issue:
 local repository was initialize to use "master" while the remote repository was "main"
 #### Solution:
-- Created a new branch for main locally
-- Rebased the main branch by pulling the remote repository and set Git Configuration for pull.rebase to true
-- Pushed the main branch to the remote repository
-- Deleted the master branch locally and remotely
+- Created a new branch for main locally     (```git branch main```)
+- Rebased the main branch by pulling the remote repository and set Git Configuration for pull.rebase to true    (```git config pull.rebase=true && git pull origin main```)
+- Pushed the main branch to the remote repository   (```git push origin main```)
+- Deleted the master branch locally and remotely    (```git branch -D master```)
 
 ### 2. Permission for updating the httpd project files in /var/www/html
 #### Issue:
