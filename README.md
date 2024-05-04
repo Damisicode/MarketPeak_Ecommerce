@@ -66,7 +66,7 @@ sudo systemctl reload httpd
 - Go to your EC2 dashboard and select your instance
 - Select security in the panel below and click the security group attached
 - Click edit inbound rule to add an inbound rule
-- Add port range of 80 to open port for HTTP traffic and select your source range
+- Add port range of 80 to open port for HTTP traffic and select your source range   Note: opening all port range makes your application susceptible to attacks, therefore, open only ports you need
 - Save rule and access your website at your IP address (e.g. 172.162.34.1)
 
 
