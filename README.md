@@ -1,4 +1,4 @@
-# MarketPeak_Ecommerce
+# MarketPeak Ecommerce Website
 Ecommerce Platform Deployment with Git, Linux, and AWS
 
 ## Steps to deploying the Ecommerce Platform to an AWS Amazon Linux instance in 13 simple steps
@@ -70,15 +70,15 @@ sudo systemctl reload httpd
 - Save rule and access your website at your IP address (e.g. 172.162.34.1)
 
 
-## Issues and Solutions
+## Challenges and Solutions
 ### 1. Git branching Issue
 #### Issue:
 local repository was initialize to use "master" while the remote repository was "main"
 #### Solution:
-- Created a new branch for main locally
-- Rebased the main branch by pulling the remote repository and set Git Configuration for pull.rebase to true
-- Pushed the main branch to the remote repository
-- Deleted the master branch locally and remotely
+- Created a new branch for main locally     (```git branch main```)
+- Rebased the main branch by pulling the remote repository and set Git Configuration for pull.rebase to true    (```git config pull.rebase=true && git pull origin main```)
+- Pushed the main branch to the remote repository   (```git push origin main```)
+- Deleted the master branch locally and remotely    (```git branch -D master```)
 
 ### 2. Permission for updating the httpd project files in /var/www/html
 #### Issue:
