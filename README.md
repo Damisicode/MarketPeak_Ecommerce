@@ -70,7 +70,7 @@ sudo systemctl reload httpd
 - Save rule and access your website at your IP address (e.g. 172.162.34.1)
 
 
-## Issues and Solutions
+## Challenges and Solutions
 ### 1. Git branching Issue
 #### Issue:
 local repository was initialize to use "master" while the remote repository was "main"
